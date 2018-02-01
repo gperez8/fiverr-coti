@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='app' ng-cloak>
 	<head>
+		<base href="/">
 		<title>Page Title</title>
 	</head>
-	<body>
+	<body ng-controller="appCtrl">
 
 		<h1>This is a Heading</h1>
 		<p>This is a paragraph.</p>
 
+		 <div ng-view=""></div>
+
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/angular-route/angular-route.min.js"></script>
+	
+		<script src="src/js/modules/module.js"></script>
+		<script src="src/js/controllers/appCtrl.js"></script>
+		<script src="src/js/routes/routes.js"></script>
 	</body>
 </html>
