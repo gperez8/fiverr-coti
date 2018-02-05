@@ -148,3 +148,48 @@ footer{
     margin: 0 -100%;
     position: absolute;
 }
+
+.vision { 
+    width: 50%;
+    height: 100vh;
+    background: url(../img/vision.svg) center center no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+.section_three {
+    background-image: linear-gradient(65deg,#194aad,#014a78);
+    background-size: cover;
+}
+
+
+.challenge-img {
+    background: url(../img/challenge.svg) center center no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 500px;
+    margin-left: 45vw;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important; 
+}
+
+.solution-img {
+    background: url(../img/solution.svg) center center no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.section_five {
+    background-image: linear-gradient(to top,#04a7cb,#00194c 99%);
+}
+
+.protocol-img {
+    background: url(../img/protocol.png) center center no-repeat;
+    background-size: contain;
+    width: 480px;
+    height: 500px;
+    margin-left: 45vw;
+}
