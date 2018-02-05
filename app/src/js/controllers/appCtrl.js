@@ -1,4 +1,4 @@
 angular.module('app')
-	.controller('appCtrl', ($scope) => { 
+	.controller('appCtrl', function($scope)  { 
 		console.log('HOLA');
 	});
