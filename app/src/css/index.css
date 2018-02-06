@@ -193,3 +193,96 @@ footer{
     height: 500px;
     margin-left: 45vw;
 }
+
+.section_six {
+	height: auto;
+	display: block;
+    padding: 75px 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: auto;
+    background-color: #f4f4f4;
+    text-align: center;
+    background: url(../img/pattern-small.svg) 0 0 no-repeat,#f4f4f4;
+    background-size: cover;
+}
+
+.investing {
+    background: url(../img/investing-idle.png) no-repeat;
+    background-size: contain;
+    height: 28px;
+    width: 150px;
+    margin-top: 11px;
+}
+
+.investing:hover{
+	background: url(../img/investing.png) no-repeat;
+    background-size: contain;
+}
+
+.techcrunch{
+	background: url(../img/techcrunch-idle.svg) no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 59px;
+    margin-top: 10px;
+    margin-left: 3vw;
+}
+
+.techcrunch:hover{
+	background: url(../img/techcrunch.svg) no-repeat;
+    background-size: contain;
+}
+
+.forbes {
+    background: url(../img/forbes-idle.svg) no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 116px;
+    margin-top: 9.5px;
+}
+
+.forbes:hover{
+	background: url(../img/forbes.svg) no-repeat;
+    background-size: contain;
+}
+
+.inc {
+    background: url(../img/inc-idle.png) no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 87px;
+    margin-top: 10px;
+    margin-left: 1vw;
+}
+
+.inc:hover{
+	background: url(../img/inc.png) no-repeat;
+    background-size: contain;
+}
+
+.euromoney {
+    background: url(../img/euromoney-idle.svg) no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 133px;
+    margin-top: 10px;
+}
+
+.euromoney:hover{
+	background: url(../img/euromoney.svg) no-repeat;
+    background-size: contain;
+}
+
+.telegraph {
+    background: url(../img/telegraph-idle.png) no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 106px;
+    margin-left: 1vw;
+}
+
+.telegraph:hover {
+   	background: url(../img/telegraph.png) no-repeat;
+    background-size: contain;
+}
