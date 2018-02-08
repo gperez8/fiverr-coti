@@ -321,8 +321,14 @@ footer{
     height: auto;
 }
 
+.content-img {
+    display: block;
+    padding-top: 10vh;
+    height: auto;
+}
+
 .roadmap-img-container{
-    width: 250%;
+    width: 100%;
     -webkit-transition: margin-left 1.2s;
     display: -webkit-inline-box;
 }
@@ -336,21 +342,27 @@ footer{
 }
 
 .map-img1 {
+    position: relative;
     background: url(../img/2017.svg) 0 0 no-repeat;
     background-size: contain;
-    width: 40% !important;
+    width: 100vw !important;
+    margin-left: 7%;
 }
 
 .map-img2 {
+    position: relative;
     background: url(../img/2018.svg) 0 0 no-repeat;
     background-size: contain;
-    width: 40% !important;
+    width: 100vw !important;
+    margin-left: 7%;
 }
 
 .map-img3 {
+    position: relative;
     background: url(../img/future.svg) 0 0 no-repeat;
     background-size: contain;
-    width: 20% !important;
+    width: 100vw !important;
+    margin-left: 7%;
 }
 
 .team-people-name {
@@ -360,7 +372,7 @@ footer{
 
 .team-people-title {
     font-weight: 300;
-    margin-top: -4%;     
+    margin-top: -5%;     
 }
 
 .team-people-inner-container{
