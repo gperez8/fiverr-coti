@@ -609,4 +609,32 @@ section#section_nine .documentation-left {
 
 .navbar-change {
 	background-color: transparent !important;
+	color: #788da8 !important;
 }
+
+.navbar-change a {
+	color: white !important;
+}
+
+.navbar-brand {
+	font-family: 'Titillium Web', sans-serif; 
+	font-size: 200%;
+}
+
+#navbarSupportedContent{
+	margin-left: 6% !important;
+}
+
+.logo{
+	font-size: 14px;
+	color: black;
+	background: url(../img/logo/logo.svg) no-repeat scroll center center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-nav {
+	margin-top: -0.5% !important; 
+}
+
