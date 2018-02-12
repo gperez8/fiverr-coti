@@ -567,3 +567,46 @@ section#section_nine .documentation-left {
     -webkit-align-items: center;
     -webkit-box-align: center;
 }
+
+.navbar {
+	padding-left: 4%;
+	float: left;
+    z-index: 100;
+    font-size: 14px;
+    width: 100%;
+}
+
+.icon {
+	position: relative;
+    float: right;
+    margin-right: 4%;
+    font-size: 30px;
+	margin-left: 20px;
+}
+
+.icon i {
+	margin-right: 20px;
+	background-color: transparent;
+    color: #2cbfdf;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #25caf0;
+    color: transparent;
+}
+
+.icon i:hover {
+	color: #25caf0;
+}
+
+.steemit {
+	font-size: 14px;
+	color: black;
+	background: url(../img/steemit-idle.svg) no-repeat scroll center center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-change {
+	background-color: transparent !important;
+}
