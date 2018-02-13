@@ -248,6 +248,41 @@ footer{
 
 .section_five {
     background-image: linear-gradient(to top,#04a7cb,#00194c 99%);
+	height: 100vh;
+}
+
+.section_five h2{
+	font-size: 34px;
+    font-weight: 100;
+    letter-spacing: 1.1px;
+    width: 80%;
+    color: #e2efff;
+}
+
+.section_five h3{
+	margin-top: 23vh;
+    margin-bottom: 1vh;
+}
+
+.section_five p {
+	width: 95%;
+    text-indent: 0px;
+
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    opacity: .95;
+    color: #e2efff;
+}
+
+.section_five .center-vertical {
+	margin-left: 3vw;
+}
+
+.section_fourth .center-horizontal {
+	display: inherit;
+    margin-top: 11vh;
 }
 
 .protocol-img {
@@ -256,6 +291,7 @@ footer{
     width: 480px;
     height: 500px;
     margin-left: 45vw;
+    margin-top: -54vh;
 }
 
 .pattern {
