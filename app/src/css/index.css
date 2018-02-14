@@ -413,12 +413,42 @@ footer{
     padding-top: 75px;
     background-color: #f4f4f4;
     background-image: linear-gradient(115deg,#123680,#0681a9);
-    height: auto;
+    height: 100vh;
+}
+
+.section_eight h3 {
+	margin-left: 7vw;
+}
+
+
+.section_eight h2 {
+	margin-left: 7vw;
+    margin-top: 7vh;
+    width: 37vw;
+    color: #e2efff;
+}
+
+.section_eight > a:hover{
+	cursor: pointer;
+}
+
+.section_eight .align-button {
+	margin-left: 45vw;
+    color: #FFFFFF;
+    margin-top: 8vh;
+}
+
+.section_eight .align-button a {
+	margin-right: 2%;
+}
+
+.section_eight .align-button a:hover{
+	cursor: pointer;
 }
 
 .content-img {
     display: block;
-    padding-top: 10vh;
+    padding-top: 0vh;
     height: auto;
 }
 
@@ -761,4 +791,24 @@ section#section_nine .documentation-left {
 
 .section_two .right {
 	padding-left: 5%; 
+}
+
+.section_ten {
+	text-align: center;
+	height: 100vh;
+}
+
+.section_ten h2{
+	margin-top: 6vh;
+}
+
+h3#title1 {
+	text-align: center !important;
+	margin-top: 18vh;
+}
+
+h3#title2 {
+	text-align: center !important;
+    margin-bottom: 7vh;
+    margin-top: 4vh;
 }
