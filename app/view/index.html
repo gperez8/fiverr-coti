@@ -281,40 +281,21 @@
 					<h2>Behind the Currency of the Internet</h2>
 					<h3 id="title2" class="txt-highlight">Core Team</h3>
 
-
-					<div class="row">
+					<div class="row " ng-repeat="team in response.teams">
 						<div class="col-md-4 col-xl-4">
 							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
-							<p class="team-people-name">Carlos Aguilera</p>
-							<p class="team-people-title">CEO</p>
+							<p class="team-people-name">{{team[0].fullName}}</p>
+							<p class="team-people-title">{{team[0].employment}}</p>
 						</div>
 						<div class="col-md-4 col-xl-4">
 							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/2.jpg" width="140" height="140">
-							<p class="team-people-name">Gregory Perez</p>
-							<p class="team-people-title">Product Manager</p>
+							<p class="team-people-name">{{team[1].fullName}}</p>
+							<p class="team-people-title">{{team[1].employment}}</p>
 						</div>
 						<div class="col-md-4 col-xl-4">
 							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/3.jpg" width="140" height="140">
-							<p class="team-people-name">Cesar Kai</p>
-							<p class="team-people-title">SEO</p>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-4 col-xl-4">
-							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
-							<p class="team-people-name">Carlos Aguilera</p>
-							<p class="team-people-title">CEO</p>
-						</div>
-						<div class="col-md-4 col-xl-4">
-							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/2.jpg" width="140" height="140">
-							<p class="team-people-name">Gregory Perez</p>
-							<p class="team-people-title">Product Manager</p>
-						</div>
-						<div class="col-md-4 col-xl-4">
-							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/3.jpg" width="140" height="140">
-							<p class="team-people-name">Cesar Kai</p>
-							<p class="team-people-title">SEO</p>
+							<p class="team-people-name">{{team[2].fullName}}</p>
+							<p class="team-people-title">{{team[2].employment}}</p>
 						</div>
 					</div>
 				</div>
