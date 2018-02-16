@@ -795,7 +795,6 @@ section#section_nine .documentation-left {
 
 .section_ten {
 	text-align: center;
-	height: 100vh;
 }
 
 .section_ten h2{
@@ -811,4 +810,9 @@ h3#title2 {
 	text-align: center !important;
     margin-bottom: 7vh;
     margin-top: 4vh;
+}
+
+h3#title3{
+	margin-bottom: 10vh !important;
+	text-align: center;
 }
