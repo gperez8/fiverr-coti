@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="349px" height="335px" viewBox="0 0 349 335" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>hex-update</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="35.0995272%" y1="40.5312883%" x2="35.0995282%" y2="88.9268293%" id="linearGradient-1">
+            <stop stop-color="#57D8F1" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#C991FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-448.632812%" y1="-6.42482517%" x2="-2783.39844%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#57D8F1" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#C991FF" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1809.375%" y1="13.434222%" x2="-1809.375%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#4CF0D2" offset="0%"></stop>
+            <stop stop-color="#C991FF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="73.2032071%" y1="131.500146%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#57D8F1" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#ABA4FB" stop-opacity="0.15" offset="42.829769%"></stop>
+            <stop stop-color="#4DFFDA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="leaderboard---image-copy" transform="translate(-865.000000, -765.000000)">
+            <g id="hex-update" transform="translate(865.000000, 765.000000)">
+                <path d="M176.208566,172.553364 C176.120296,172.512851 119.439748,198.463613 6.16692049,250.405649 L175.780154,333.440266 C175.872621,333.485533 232.556929,305.807328 345.83308,250.405649 L176.208566,172.553364 Z M176.625697,171.644518 L347.208566,249.936658 C347.591828,250.112563 347.598597,250.654736 347.219846,250.840155 L176.659537,334.338415 C176.243439,334.542117 175.756561,334.542117 175.340463,334.338415 L4.78015437,250.840155 C4.40140277,250.654736 4.4081716,250.112563 4.7914342,249.936658 L175.374303,171.644518 C175.771515,171.46221 176.228485,171.46221 176.625697,171.644518 Z" id="Polygon-Copy-3" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <polygon id="Line-2" fill="url(#linearGradient-2)" fill-rule="nonzero" points="345.5 85.5 345.5 251.5 346.5 251.5 346.5 85.5"></polygon>
+                <polygon id="Line-2-Copy" fill="url(#linearGradient-3)" fill-rule="nonzero" points="4 85.5 4 251.041667 5 251.041667 5 85.5"></polygon>
+                <path d="M346.779548,85.4487772 C347.027401,85.5705294 347.327025,85.4683047 347.448777,85.2204519 C347.570529,84.9725992 347.468305,84.6729751 347.220452,84.5512228 L176,0.442930656 L4.77954806,84.5512228 C4.53169528,84.6729751 4.42947059,84.9725992 4.55122284,85.2204519 C4.67297508,85.4683047 4.97259916,85.5705294 5.22045194,85.4487772 L176,1.55706934 L346.779548,85.4487772 Z" id="Polygon-Copy-5" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>
+                <path d="M176,173.007787 L7.33384098,250.420218 L176,332.991192 L344.666159,250.420218 L176,173.007787 Z M176.834263,171.190095 L347.417132,249.482234 C348.183657,249.834045 348.197194,250.918392 347.439691,251.28923 L176.879383,334.78749 C176.324585,335.059092 175.675415,335.059092 175.120617,334.78749 L4.56030874,251.28923 C3.80280555,250.918392 3.81634321,249.834045 4.5828684,249.482234 L175.165737,171.190095 C175.695353,170.947018 176.304647,170.947018 176.834263,171.190095 Z" id="Polygon-Copy-3" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M176,1.55706934 L346.779548,85.4487772 C347.027401,85.5705294 347.327025,85.4683047 347.448777,85.2204519 C347.570529,84.9725992 347.468305,84.6729751 347.220452,84.5512228 L176,0.442930656 L4.77954806,84.5512228 C4.53169528,84.6729751 4.42947059,84.9725992 4.55122284,85.2204519 C4.67297508,85.4683047 4.97259916,85.5705294 5.22045194,85.4487772 L176,1.55706934 Z" id="Polygon-Copy-5" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>
+                <circle id="Oval-8-Copy-10" fill="#7686D4" cx="5.5" cy="250.5" r="5.5"></circle>
+                <circle id="Oval-8-Copy-20" fill="#1D7BA2" cx="345.5" cy="84.5" r="3.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -126,7 +126,7 @@ footer{
 }
 
 .section_one {
-    width: 40%;
+	display: in
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -135,6 +135,53 @@ footer{
     padding: 0 100%;
     margin: 0 -100%;
 	background: linear-gradient(to bottom,#00194c,#04a7cb);
+	display: -webkit-flex;
+      -webkit-flex-direction: row;
+}
+
+.overview-copy-container {
+    color: #fff;
+    width: 39%;
+    z-index: 2;
+    position: absolute;
+    top: 31vh;
+    left: 5vw;
+}
+
+.section_one h1{
+	margin: 3% 2% 10% -3px;
+}
+
+.overview-copy-container h1{
+    height: 122px;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    text-align: left;
+    color: #e2f8ff;
+    text-shadow: 0 0 10px rgba(228,236,255,.02);
+    margin-left: -3px;
+    font-family: 'Titillium Web',sans-serif;
+    width: 100%;
+    font-size: 51px;
+}
+
+.overview-copy-container h4 {
+	font-family: 'Titillium Web',sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    opacity: .7;
+    font-weight: 500;
+    color: #b7cce5;
+    text-shadow: 0 0 4px rgba(235,251,255,.02);
+}
+
+.overview-copy-container h4.sale {
+    float: left;
+    width: 100%;
 }
 
 .content{
@@ -143,15 +190,43 @@ footer{
 
 .img_background {
     background: url(../img/leaderboard.svg) center center no-repeat;
-    width: 40%;
     height: 100vh;
-    display: flex;
+    display: inline-table;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 100%;
     margin: 0 -100%;
     position: absolute;
+    left: 62%;
+    width: 40%;
+}
+
+.overview-hex {
+    background: url(../img/hex.svg) center center no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+}
+
+.overview-hex-image {
+    background: url(../img/vid.gif) 4px 10px no-repeat;
+    background-size: contain;
+    width: 344px;
+    height: 340px;
+    opacity: .6;
+}
+
+.overview-hex-play {
+    background: url(../img/play-white.svg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s all ease-out;
+    opacity: .75;
+    margin-top: 30.7vh;
 }
 
 .vision { 
@@ -837,4 +912,14 @@ h3#title3{
 .meet-team:hover  {
     transition: .6s all ease-in;
     background-color: #2c84df;
+}
+
+.white {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar {
+	font-family: 'Titillium Web',sans-serif;
+	
 }
