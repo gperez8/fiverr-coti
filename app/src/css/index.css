@@ -229,6 +229,70 @@ footer{
     margin-top: 30.7vh;
 }
 
+.overview-copy-container input{
+	width: 245px;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 42px;
+    border-radius: 3px;
+    border: solid 1px #2cbfdf;
+    color: #e2efff;
+    background-color: transparent;
+    font-family: 'Titillium Web',sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    line-height: 21px;
+    transition: border .5s;
+    -webkit-transition: border .5s;
+    -moz-transition: border .5s;
+    -o-transition: border .5s;
+    -ms-transition: border .5s;
+}
+
+.overview-copy-container input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e2efff;
+}
+
+
+.overview-copy-container button[type="submit"]{
+	font-family: 'Titillium Web',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #f2fbff;
+    text-shadow: 0 0 4px rgba(235,251,255,.1);
+    width: 160px;
+    float: right;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    background-image: linear-gradient(241deg,#2cbfdf 25%,#2c9cdf 100%);
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    margin-right: 20%;
+}
+
+.overview-copy-container button[type="submit"]:hover{
+	background-image: linear-gradient(0deg,#2cbfdf 0,#2c9cdf 100%);
+}
+
+.overview-copy-container form{
+	margin-bottom: 7%;
+}
+
+.email{
+	width: 30px;
+    height: 18px;
+    border: none;
+    border-right: none;
+    position: absolute;
+    margin: 12px 0 0 6px;
+    margin: 7px 0 0 9px;
+    font-size: 21px;
+    color: #2cbfdf;
+}
+
 .vision { 
     width: 50%;
     height: 100vh;
