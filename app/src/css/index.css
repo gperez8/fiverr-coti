@@ -132,8 +132,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 100%;
-    margin: 0 -100%;
+
 	background: linear-gradient(to bottom,#00194c,#04a7cb);
 	display: -webkit-flex;
       -webkit-flex-direction: row;
@@ -195,11 +194,11 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 100%;
-    margin: 0 -100%;
+
     position: absolute;
-    left: 62%;
-    width: 40%;
+    left: 40%;
+    width: 60%;
+    float: right;
 }
 
 .overview-hex {
@@ -207,6 +206,7 @@ footer{
     background-size: contain;
     width: 350px;
     height: 350px;
+    margin-left: 28%;
 }
 
 .overview-hex-image {
