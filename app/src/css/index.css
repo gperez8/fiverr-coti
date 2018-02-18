@@ -248,10 +248,19 @@ footer{
     -ms-transition: border .5s;
 }
 
-.overview-copy-container input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.overview-copy-container input[type="email"]::-webkit-input-placeholder { 
   color: #e2efff;
 }
 
+.overview-copy-container input[type="email"]::-moz-placeholder { 
+  color: #e2efff;
+}
+.overview-copy-container input[type="email"]:-ms-input-placeholder { 
+  color: #e2efff;
+}
+.overview-copy-container input[type="email"]:-moz-placeholder { 
+  color: #e2efff;
+}
 
 .overview-copy-container button[type="submit"]{
 	font-family: 'Titillium Web',sans-serif;
@@ -838,6 +847,7 @@ section#section_nine .documentation-left {
     z-index: 100;
     font-size: 14px;
     width: 100%;
+    color:;
 }
 
 .icon {
@@ -873,10 +883,14 @@ section#section_nine .documentation-left {
 
 .navbar-change {
 	background-color: transparent !important;
+}
+
+
+.navbar-change ul li a {
 	color: #788da8 !important;
 }
 
-.navbar-change a {
+.navbar-change a:hover{
 	color: white !important;
 }
 
@@ -985,5 +999,16 @@ h3#title3{
 
 .navbar {
 	font-family: 'Titillium Web',sans-serif;
-	
+}
+
+.nav-link {
+	color:black !important;
+}
+
+.logo-white {
+	color:white !important;
+}
+
+.logo-black {
+	color:black !important;
 }

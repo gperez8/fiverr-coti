@@ -3,9 +3,12 @@ angular.module('app')
 
 		/* Var del controlador */
 			const navbar = $('.navbar');
-			navbar.addClass('navbar-change');
-			const navbarHeight = $('.navbar').height();
+			const logo = $('.navbar-brand');
 
+			navbar.addClass('navbar-change');
+			logo.addClass('logo-white');
+
+			const navbarHeight = $('.navbar').height();
 
 			$scope.response = {
 				teams: 
@@ -129,8 +132,11 @@ angular.module('app')
 			const navbarCurrentPosition = document.body.scrollTop;
 			if (navbarCurrentPosition >= navbarHeight) {
 				navbar.removeClass('navbar-change');
+				logo.addClass('logo-black');
 			} else {
 				navbar.addClass('navbar-change');
+				logo.removeClass('logo-black');
+				logo.addClass('logo-white');
 			}			
 		});
 
