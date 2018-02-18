@@ -892,6 +892,7 @@ section#section_nine .documentation-left {
 
 .navbar-change a:hover{
 	color: white !important;
+	text-decoration: none !important;
 }
 
 .navbar-brand {
@@ -1003,6 +1004,10 @@ h3#title3{
 
 .nav-link {
 	color:black !important;
+}
+
+.nav-link:hover{
+	text-decoration: underline;
 }
 
 .logo-white {
