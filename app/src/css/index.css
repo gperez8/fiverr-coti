@@ -1042,3 +1042,64 @@ h3#title3{
     font-weight: 100;
     letter-spacing: 0;
 }
+
+#description{
+	text-align: left;
+}
+
+.container > h3#title2.txt-highlight{
+	margin-top: 11vh !important;
+}
+
+/********FAQ*********/
+
+#legal-header {
+    display: block;
+    padding: calc(15vh + 60px) 0 15vh 0;
+    height: auto;
+    background-color: #f4f4f4;
+    text-align: center;
+    background: url(../img/pattern-large.svg) 0 0 no-repeat,linear-gradient(to bottom,#00194c,#04a7cb);
+    background-size: cover;
+}
+
+#legal-header h1 {
+	color: white;
+}
+
+#faq.content {
+    max-width: 1440px;
+    margin: 10vh auto;
+    padding: 0 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+section#main #categories {
+    display: flex;
+    margin-right: 30px;
+    width: 20%;
+}
+
+section#main #categories-wrapper {
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+section#main .category {
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: .5s ease-out;
+    display: block;
+}
+
+section#main li, p {
+    font-size: 17px;
+    font-family: 'Titillium Web';;
+    line-height: 34px;
+    color: #3d3a44;
+}

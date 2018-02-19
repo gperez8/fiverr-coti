@@ -53,36 +53,24 @@
 		</header>
 
 		<main>
-			<section id="team-header">
-				<h3 class="txt-highlight">PEOPLE</h3>
-				<br>
-				<h2>Behind the Currency of the Internet</h2>
+			<section id="legal-header">
+				<h1>Frequently Asked Questions</h1>
 			</section>
 
-			<section class="container">
-
-				<h3 id="title2" class="txt-highlight">Core Team</h3>
-
-				<div class="row" ng-repeat="team in response.teams">
-					<div class="col-md-4 col-xl-4" ng-repeat="people in team">
-						<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
-						<p class="team-people-name">{{people.fullName}}</p>
-						<p class="team-people-title">{{people.employment}}</p>
-
-						<p id="description">{{people.description}}</p>
-					</div>
+			<section id="main" class="content">
+				<div class="search-bar"></div>
+				<div class="content">
+					<aside id="categories">
+						<ul id="categories-wrapper">
+							<li id="category">about yot []</li>
+							<li id="category">offering []</li>
+							<li id="category">community []</li>
+							<li id="category">industry []</li>
+							<li id="category">token sale []</li>
+							<li id="category">mediators []</li>
+						</ul>
+					</aside>
 				</div>
-
-					<h3 id="title3" class="txt-highlight">BACKERS AND ADVISORS</h3>
-
-					<div  class="row" ng-repeat="team in response.teams">
-						<div class="col-md-4 col-xl-4" ng-repeat="people in team">
-							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
-							<p class="team-people-name">{{people.fullName}}</p>
-							<p class="team-people-title">{{people.employment}}</p>
-							<p id="description">{{people.description}}</p>
-						</div>
-					</div>
 			</section>
 		</main>
 
