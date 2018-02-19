@@ -59,28 +59,27 @@
 				<h2>Behind the Currency of the Internet</h2>
 			</section>
 
-			<section class="">
-				<div class="row">
-					<div class="col-4 col-xl-2">
-						<a href="" target="_blank"><div class="investing"></div></a>
-					</div>
-					<div class="col-4 col-xl-2">
-						<a href="" target="_blank"><div class="techcrunch"></div></a>
-					</div>
-					<div class="col-4 col-xl-2">	
-						<a href="" target="_blank"><div class="forbes"></div></a>
+			<section class="container">
+
+				<h3 id="title2" class="txt-highlight">Core Team</h3>
+
+				<div class="row" ng-repeat="team in response.teams">
+						<div class="col-md-4 col-xl-4" ng-repeat="people in team">
+							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
+							<p class="team-people-name">{{people.fullName}}</p>
+							<p class="team-people-title">{{people.employment}}</p>
+						</div>
 					</div>
 
-					<div class="col-4 col-xl-2">
-						<a href="" target="_blank"><div class="inc"></div></a>
+					<h3 id="title3" class="txt-highlight">BACKERS AND ADVISORS</h3>
+
+					<div class="row" ng-repeat="team in response.teams">
+						<div class="col-md-4 col-xl-4" ng-repeat="people in team">
+							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
+							<p class="team-people-name">{{people.fullName}}</p>
+							<p class="team-people-title">{{people.employment}}</p>
+						</div>
 					</div>
-					<div class="col-4 col-xl-2">
-						<a href="" target="_blank"><div class="euromoney"></div></a>
-					</div>
-					<div class="col-4 col-xl-2">
-						<a href="" target="_blank"><div class="telegraph"></div></a>
-					</div>
-				</div>
 			</section>
 		</main>
 
