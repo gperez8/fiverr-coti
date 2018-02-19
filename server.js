@@ -21,9 +21,12 @@ const httpServer = http.createServer(app);
 httpServer.listen(app.get('port'));
 
 app.use('/', function(req, res) {
-	res.sendFile(path.join(__dirname, 'app/view/index.html'));
+	res.sendFile(path.join(__dirname, 'app/view/team.html'));
 });
 
-app.use('/view2', function(req, res) {
-	res.sendFile(path.join(__dirname, 'app/view/view2.html'));
+app.get('/team', function(req, res) {
+
+	console.log('aiojdlsajldjsalkjdl')
+
+	res.render(path.join(__dirname, 'app/view/team.html'));
 });

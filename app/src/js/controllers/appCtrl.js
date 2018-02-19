@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('appCtrl', function($scope)  { 
+	.controller('appCtrl', function($scope,$http)  { 
 
 		/* Var del controlador */
 			const navbar = $('.navbar');
@@ -139,5 +139,10 @@ angular.module('app')
 				logo.addClass('logo-white');
 			}			
 		});
+
+		$scope.team = function() {
+			console.log('hola');
+			window.location.href = 'view/team.html';
+		}
 
 	});

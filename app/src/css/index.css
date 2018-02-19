@@ -194,7 +194,6 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     position: absolute;
     left: 40%;
     width: 60%;
@@ -1016,4 +1015,30 @@ h3#title3{
 
 .logo-black {
 	color:black !important;
+}
+
+/******** TEAM *********/
+
+#team-header {
+	display: block;
+    padding: calc(15vh + 60px) 0 15vh 0;
+    height: auto;
+    background-color: #f4f4f4;
+    text-align: center;
+    background: url(../img/pattern-large.svg) 0 0 no-repeat,linear-gradient(to bottom,#00194c,#04a7cb);
+    background-size: cover;
+    color: #e2f8ff;
+}
+	
+#team-header .txt-highlight{
+	text-align: center;
+    margin-bottom: -0.5%;
+    margin-top: 1%;
+}
+
+#team-header h2{
+	margin-bottom: 6%;
+    font-size: 34px;
+    font-weight: 100;
+    letter-spacing: 0;
 }
