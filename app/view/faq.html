@@ -57,17 +57,20 @@
 				<h1>Frequently Asked Questions</h1>
 			</section>
 
+			<div class="search-bar">
+				<i class="fa fa-search"></i> 
+				<input type="text" id="search-bar" placeholder="Search for a question">
+			</div>
 			<section id="main" class="content">
-				<div class="search-bar"></div>
 				<div class="content">
 					<aside id="categories">
 						<ul id="categories-wrapper">
-							<li id="category">about yot []</li>
-							<li id="category">offering []</li>
-							<li id="category">community []</li>
-							<li id="category">industry []</li>
-							<li id="category">token sale []</li>
-							<li id="category">mediators []</li>
+							<li class="category" ng-click="addClassBarHorizontal(0)">about yot []</li>
+							<li class="category" ng-click="addClassBarHorizontal(1)">offering []</li>
+							<li class="category" ng-click="addClassBarHorizontal(2)">community []</li>
+							<li class="category" ng-click="addClassBarHorizontal(3)">industry []</li>
+							<li class="category" ng-click="addClassBarHorizontal(4)">token sale []</li>
+							<li class="category" ng-click="addClassBarHorizontal(5)">mediators []</li>
 						</ul>
 					</aside>
 				</div>

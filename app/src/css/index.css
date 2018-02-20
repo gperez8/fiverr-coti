@@ -1067,26 +1067,78 @@ h3#title3{
 	color: white;
 }
 
-#faq.content {
+#main.content {
     max-width: 1440px;
     margin: 10vh auto;
-    padding: 0 5%;
     width: 90%;
     height: auto;
     display: flex;
     flex-direction: row;
 }
 
-section#main #categories {
+section#main{
+	height: auto;
+}
+
+section#main aside#categories {
     display: flex;
     margin-right: 30px;
-    width: 20%;
+	width: 100%;
+}
+
+section#main aside#categories:hover {
+   	color: #012660;
+    padding-left: 20px;
+    border-left: 3px solid #04a1c6;
 }
 
 section#main #categories-wrapper {
     flex-direction: row;
     list-style-type: none;
     margin-left: 0;
+}
+
+.search-bar {
+    margin: 10px auto 0;
+    text-align: center;
+    position: relative;
+}
+
+.search-bar i {
+    font-size: 23px;
+    position: absolute;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    color: #049bc0;
+}
+
+.search-bar input[type="text"] {
+	font-size: 25px;
+	border: none;
+	color: #049bc0;
+}
+
+.search-bar input[type="text"]::placeholder {
+   color: #049bc0;
+   text-align: center;
+}
+
+.search-bar input[type="text"]::placeholder::before {
+   content: '>'
+}
+
+.search-bar input[type="text"]:focus {
+    border-bottom: 1px dotted !important;
+    transition: .6s all ease-in;
+    outline: none;
+}
+
+.search-bar input[type="text"]:focus, text-area: focus{
+	border: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline-offset: -2px;
 }
 
 section#main .category {
@@ -1097,9 +1149,33 @@ section#main .category {
     display: block;
 }
 
+.category-selected {
+    border-left: 3px solid #012658!important;
+    padding-left: 20px;
+    color: #012658;
+}
+
+section#main .category:hover {
+    color: #012660;
+    padding-left: 20px;
+    border-left: 3px solid #04a1c6;
+}
+
 section#main li, p {
     font-size: 17px;
     font-family: 'Titillium Web';;
     line-height: 34px;
     color: #3d3a44;
+}
+
+#main ul{
+	padding: 0px !important; 
+}
+
+#main li, p {
+    font-size: 17px;
+    font-family: book;
+    line-height: 34px;
+    color: #3d3a44;
+    text-transform: uppercase;
 }

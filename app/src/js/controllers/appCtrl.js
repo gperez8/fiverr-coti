@@ -145,4 +145,9 @@ angular.module('app')
 			window.location.href = 'view/team.html';
 		}
 
+		$scope.addClassBarHorizontal = function(index){
+			const menu = $('#categories-wrapper');
+			console.log('menu', menu.children[index]);
+		}
+
 	});
