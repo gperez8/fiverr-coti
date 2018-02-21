@@ -1098,6 +1098,41 @@ section#main #categories-wrapper {
     margin-left: 0;
 }
 
+section#main #questions {
+    flex-direction: column;
+    width: 80%;
+    padding: 5px;
+}
+
+section#main #category-selected {
+    color: #049bc0;
+    font-size: 35px;
+    margin-bottom: 30px;
+    transition: .5s ease-in;
+}
+
+section#main #category-selected h1 {
+    font-family: 'Titillium Web';
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: 0;
+    color: #e2f8ff;
+    text-shadow: 0 0 10px rgba(228,236,255,.02);
+}
+
+section#main .answer {
+    background-color: #b1e0eb21;
+    padding: 10px;
+    font-family: book;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    opacity: .95;
+    color: #3d3a44;
+    line-height: 2;
+}
+
 .search-bar {
     margin: 10px auto 0;
     text-align: center;
@@ -1116,6 +1151,10 @@ section#main #categories-wrapper {
 	font-size: 25px;
 	border: none;
 	color: #049bc0;
+}
+
+.search-bar input{
+	text-align: center;
 }
 
 .search-bar input[type="text"]::placeholder {
@@ -1163,7 +1202,7 @@ section#main .category:hover {
 
 section#main li, p {
     font-size: 17px;
-    font-family: 'Titillium Web';;
+    font-family: 'Titillium Web';
     line-height: 34px;
     color: #3d3a44;
 }
