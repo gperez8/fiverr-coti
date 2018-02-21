@@ -312,7 +312,6 @@ angular.module('app')
 
 		$scope.selectedCategory = function(index) {			
 			if (angular.isDefined($scope.indexCategory)) {
-				console.log($scope.indexCategory);
 				$scope.faqs[$scope.indexCategory].categoryShow = false;
 				$scope.faqs[index].categoryShow = !$scope.faqs[index].categoryShow;
 			} 

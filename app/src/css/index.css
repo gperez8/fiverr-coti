@@ -1105,6 +1105,24 @@ section#main #questions {
     padding: 5px;
 }
 
+section#main .question {
+    cursor: pointer;
+    text-transform: initial;
+    font-size: 23px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+section#main #questions-wrapper {
+    list-style: none;
+    padding: 5px;
+}
+
+section#main #questions-wrapper h1{
+
+}
+
 section#main #category-selected {
     color: #049bc0;
     font-size: 35px;
@@ -1124,7 +1142,7 @@ section#main #category-selected h1 {
 section#main .answer {
     background-color: #b1e0eb21;
     padding: 10px;
-    font-family: book;
+    font-family: 'Titillium Web';
     font-size: 14px;
     font-weight: 100;
     line-height: 1.5;
@@ -1206,16 +1224,9 @@ section#main li, p {
     font-family: 'Titillium Web';
     line-height: 34px;
     color: #3d3a44;
+    text-indent: 0px;
 }
 
 #main ul{
 	padding: 0px !important; 
-}
-
-#main li, p {
-    font-size: 17px;
-    font-family: book;
-    line-height: 34px;
-    color: #3d3a44;
-    text-transform: uppercase;
 }
