@@ -233,31 +233,38 @@ angular.module('app')
 						questions: [
 							{
 								title: 'When is the COTI token sale?',
-								answer: 'The date of COTI’s Token Generation Event (TGE) has not been released to the public. Details will soon be released via a mailer to all newsletter subscribers and via various social media channels. The best way to stay up to date is by joining our Telegram group.'
+								answer: 'The date of COTI’s Token Generation Event (TGE) has not been released to the public. Details will soon be released via a mailer to all newsletter subscribers and via various social media channels. The best way to stay up to date is by joining our Telegram group.',
+								isOpenAnswer: false,
 							},
 							{
 								title: 'How can I purchase COTI tokens?',
-								answer: 'You will be able to purchase COTI tokens using cryptocurrencies (BTC, ETH) or fiat money via bank wires or credit/debit card (Visa or MasterCard).'
+								answer: 'You will be able to purchase COTI tokens using cryptocurrencies (BTC, ETH) or fiat money via bank wires or credit/debit card (Visa or MasterCard).',
+								isOpenAnswer: false,
 							},
 							{
 								title: 'What is the estimated supply of the COTI token?',
-								answer: 'Full details of COTI’s TGE, including token supply, will be released soon.'
+								answer: 'Full details of COTI’s TGE, including token supply, will be released soon.',
+								isOpenAnswer: false,
 							},
 							{
 								title: 'Will I receive any bonuses for my contributions in COTI’s TGE?',
-								answer: 'Full details of COTI’s TGE will be released soon.'
+								answer: 'Full details of COTI’s TGE will be released soon.',
+								isOpenAnswer: false,
 							},
 							{
 								title: 'Are there regulations on your TGE?',
-								answer: 'Full details of COTI’s TGE will be released soon. Before the TGE commences, COTI will provide details of its know-your-customer (KYC) and anti-money laundering (AML) standards, as well as details regarding restricted jurisdictions.'
+								answer: 'Full details of COTI’s TGE will be released soon. Before the TGE commences, COTI will provide details of its know-your-customer (KYC) and anti-money laundering (AML) standards, as well as details regarding restricted jurisdictions.',
+								isOpenAnswer: false,
 							},
 							{
 								title: 'What does it take to become an accredited investor?',
-								answer: 'An accredited investor is a person or entity that can deal with securities not registered with financial authorities by satisfying one of the requirements regarding income, net worth, asset size, governance status or professional experience.'
+								answer: 'An accredited investor is a person or entity that can deal with securities not registered with financial authorities by satisfying one of the requirements regarding income, net worth, asset size, governance status or professional experience.',
+								isOpenAnswer: false,
 							},
 							{
 								title: 'Are there any countries that are restricted from buying COTI?',
-								answer: 'Citizens or residents of the following countries and/or territories can’t participate in our token sale (the list may change): People’s Republic of China, Afghanistan, Bosnia and Herzegovina, Central African Republic, Cuba, Democratic Republic of Congo, Democratic People’s Republic of Korea, Eritrea, Ethiopia, Guinea-Bissau, Iran, Iraq, Israel, Libya, Lebanon, Somalia, South Sudan, Sudan, Syria, Uganda, Vanuatu, Yemen. \n Citizens and residents of United States of America can participate only if they qualify as Accredited Investors.'
+								answer: 'Citizens or residents of the following countries and/or territories can’t participate in our token sale (the list may change): People’s Republic of China, Afghanistan, Bosnia and Herzegovina, Central African Republic, Cuba, Democratic Republic of Congo, Democratic People’s Republic of Korea, Eritrea, Ethiopia, Guinea-Bissau, Iran, Iraq, Israel, Libya, Lebanon, Somalia, South Sudan, Sudan, Syria, Uganda, Vanuatu, Yemen. \n Citizens and residents of United States of America can participate only if they qualify as Accredited Investors.',
+								isOpenAnswer: false,
 							},
 
 
@@ -314,10 +321,23 @@ angular.module('app')
 			if (angular.isDefined($scope.indexCategory)) {
 				$scope.faqs[$scope.indexCategory].categoryShow = false;
 				$scope.faqs[index].categoryShow = !$scope.faqs[index].categoryShow;
-			} 
-
+			}
 			$scope.indexCategory = index;
-			
+		}
+
+		$scope.selectedQuestion = function(index1, index2) {
+
+			console.log('index1', index1);
+			console.log('index2', index2);
+
+			if (angular.isDefined($scope.indexQuestion)) {
+				$scope.faqs[$scope.indexQuestion.index1].questions[$scope.indexQuestion.index2].isOpenAnswer = false;
+				$scope.faqs[index1].questions[index2].isOpenAnswer = !$scope.faqs[index1].questions[index2].isOpenAnswer;
+			}
+			$scope.indexQuestion = {
+				index1: index1,
+				index2: index2
+			};
 		}
 
 	});

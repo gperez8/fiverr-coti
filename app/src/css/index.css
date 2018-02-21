@@ -1114,6 +1114,14 @@ section#main .question {
     margin-top: 0;
 }
 
+section#main .question i {
+    font-size: 15px; 
+    padding-right: 4px; 
+    position: relative; 
+    top: -2px; 
+    transition: .4s all;
+}
+
 section#main #questions-wrapper {
     list-style: none;
     padding: 5px;
