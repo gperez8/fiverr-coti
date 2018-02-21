@@ -317,6 +317,7 @@ angular.module('app')
 			console.log('menu', menu.children[index]);
 		}
 
+		$scope.indexCategory = 0;
 		$scope.selectedCategory = function(index) {			
 			if (angular.isDefined($scope.indexCategory)) {
 				$scope.faqs[$scope.indexCategory].categoryShow = false;
@@ -325,19 +326,17 @@ angular.module('app')
 			$scope.indexCategory = index;
 		}
 
+		$scope.indexQuestion = undefined;
 		$scope.selectedQuestion = function(index1, index2) {
-
-			console.log('index1', index1);
-			console.log('index2', index2);
-
-			if (angular.isDefined($scope.indexQuestion)) {
+			if (angular.isDefined($scope.indexQuestion) && ($scope.indexQuestion.index1 !== index1  ||
+				$scope.indexQuestion.index2 !== index2)) {
 				$scope.faqs[$scope.indexQuestion.index1].questions[$scope.indexQuestion.index2].isOpenAnswer = false;
-				$scope.faqs[index1].questions[index2].isOpenAnswer = !$scope.faqs[index1].questions[index2].isOpenAnswer;
 			}
+
 			$scope.indexQuestion = {
 				index1: index1,
 				index2: index2
 			};
 		}
 
-	});
+	});s

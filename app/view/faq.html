@@ -74,7 +74,7 @@
 							<h3 ng-if="faq.categoryShow" id="category-selected" >{{faq.title}}</h3>
 							<ul ng-if="faq.categoryShow" id="questions-wrapper">
 								<li class="question-wrapper" ng-repeat="question in faq.questions">
-									<h3 class="question" ng-click="selectedQuestion($parent.$index,$index)">
+									<h3 class="question" ng-click="question.isOpenAnswer=!question.isOpenAnswer;selectedQuestion($parent.$index, $index)">
 										<span>
 											<i class="fa fa-plus" ng-if="!question.isOpenAnswer"></i>
 											<i class="fa fa-minus" ng-if="question.isOpenAnswer"></i>
