@@ -1067,9 +1067,10 @@ h3#title3{
 	color: white;
 }
 
-#main.content {
+#main .content {
     max-width: 1440px;
     margin: 10vh auto;
+    padding: 0 5%;
     width: 90%;
     height: auto;
     display: flex;
@@ -1083,7 +1084,7 @@ section#main{
 section#main aside#categories {
     display: flex;
     margin-right: 30px;
-	width: 100%;
+	width: 20%;
 }
 
 section#main aside#categories:hover {

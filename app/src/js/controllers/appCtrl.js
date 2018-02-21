@@ -132,6 +132,7 @@ angular.module('app')
 				[ 
 					{
 						category: 'ABOUT COTI',
+						categoryShow: false,
 						title: 'ABOUT COTI',
 						questions: [
 							{
@@ -151,6 +152,7 @@ angular.module('app')
 					},
 					{
 						category: 'OFFERING',
+						categoryShow: false,
 						title: 'OFFERING',
 						questions: [
 							{
@@ -178,6 +180,7 @@ angular.module('app')
 					},
 					{
 						category: 'COMMUNITY',
+						categoryShow: false,
 						title: 'COMMUNITY',
 						questions: [
 							{
@@ -205,6 +208,7 @@ angular.module('app')
 					},
 					{
 						category: 'INDUSTRY',
+						categoryShow: false,
 						title: 'INDUSTRY',
 						questions: [
 							{
@@ -224,6 +228,7 @@ angular.module('app')
 					},
 					{
 						category: 'TOKEN SALE',
+						categoryShow: false,
 						title: 'TOKEN SALE',
 						questions: [
 							{
@@ -260,6 +265,7 @@ angular.module('app')
 					},
 					{
 						category: 'MEDIATORS',
+						categoryShow: false,
 						title: 'MEDIATORS',
 						questions: [
 							{
@@ -302,6 +308,16 @@ angular.module('app')
 		$scope.addClassBarHorizontal = function(index){
 			const menu = $('#categories-wrapper');
 			console.log('menu', menu.children[index]);
+		}
+
+		$scope.selectedCategory = function(index) {			
+			if (angular.isDefined($scope.indexCategory)) {
+				$scope.faqs[$scope.indexCategory].categoryShow = false;
+			} 
+
+			$scope.indexCategory = index;
+			$scope.faqs[index].categoryShow = !$scope.faqs[index].categoryShow;
+			console.log($scope.faqs);
 		}
 
 	});

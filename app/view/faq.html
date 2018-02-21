@@ -61,23 +61,25 @@
 				<i class="fa fa-search"></i> 
 				<input type="text" id="search-bar" placeholder="Search for a question">
 			</div>
-			<section id="main" class="content">
+			<section id="main">
 				<div class="content">
 					<aside id="categories">
 						<ul id="categories-wrapper">
-							<li class="category" ng-repeat="faq in faqs">{{faq.category}} [{{faq.questions.length}}]</li>
+							<li class="category" ng-repeat="faq in faqs" ng-click="selectedCategory($index)">{{faq.category}} [{{faq.questions.length}}]</li>
 						</ul>
 					</aside>
 
-					<div id="questions" ng-repeat="faq in faqs">
-						<h1 id="category-selected" >{{faq.title}}</h1>
-						<ul id="questions-wrapper">
-							<li class="question-wrapper" ng-repeat="question in faq.questions">
-								<h3>{{question.title}}</h3>
+					<div id="questions">
+						<div ng-repeat="faq in faqs">
+							<h1 ng-if="faq.categoryShow" id="category-selected" >{{faq.title}}</h1>
+							<ul ng-if="faq.categoryShow" id="questions-wrapper">
+								<li class="question-wrapper" ng-repeat="question in faq.questions">
+									<h3>{{question.title}}</h3>
 
-								<p class="">{{question.answer}}</p>
-							</li>
-						</ul>
+									<p class="">{{question.answer}}</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
