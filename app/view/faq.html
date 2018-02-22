@@ -59,7 +59,7 @@
 
 			<div class="search-bar">
 				<i class="fa fa-search"></i> 
-				<input type="text" id="search-bar" placeholder="Search for a question">
+				<input type="text" id="search-bar" placeholder="Search for a question" ng-model="searchTitle" ng-change="searchFilter(searchTitle)">
 			</div>
 			<section id="main">
 				<div class="content">
@@ -70,9 +70,25 @@
 					</aside>
 
 					<div id="questions">
-						<div ng-repeat="faq in faqs">
+						<div ng-if="!isSearch" ng-repeat="faq in faqs">
 							<h3 ng-if="faq.categoryShow" id="category-selected" >{{faq.title}}</h3>
 							<ul ng-if="faq.categoryShow" id="questions-wrapper">
+								<li class="question-wrapper" ng-repeat="question in faq.questions">
+									<h3 class="question" ng-click="question.isOpenAnswer=!question.isOpenAnswer;selectedQuestion($parent.$index, $index)">
+										<span>
+											<i class="fa fa-plus" ng-if="!question.isOpenAnswer"></i>
+											<i class="fa fa-minus" ng-if="question.isOpenAnswer"></i>
+										</span>
+										{{question.title}}
+									</h3>
+									<p class="answer" ng-if="question.isOpenAnswer">{{question.answer}}</p>
+								</li>
+							</ul>
+						</div>
+
+						<h3 ng-if="isSearch" id="category-selected" > Search Results </h3>
+						<div ng-if="isSearch" ng-repeat="faq in faqsFilter">
+							<ul id="questions-wrapper">
 								<li class="question-wrapper" ng-repeat="question in faq.questions">
 									<h3 class="question" ng-click="question.isOpenAnswer=!question.isOpenAnswer;selectedQuestion($parent.$index, $index)">
 										<span>

@@ -233,38 +233,31 @@ angular.module('app')
 						questions: [
 							{
 								title: 'When is the COTI token sale?',
-								answer: 'The date of COTI’s Token Generation Event (TGE) has not been released to the public. Details will soon be released via a mailer to all newsletter subscribers and via various social media channels. The best way to stay up to date is by joining our Telegram group.',
-								isOpenAnswer: false,
+								answer: 'The date of COTI’s Token Generation Event (TGE) has not been released to the public. Details will soon be released via a mailer to all newsletter subscribers and via various social media channels. The best way to stay up to date is by joining our Telegram group.'
 							},
 							{
 								title: 'How can I purchase COTI tokens?',
-								answer: 'You will be able to purchase COTI tokens using cryptocurrencies (BTC, ETH) or fiat money via bank wires or credit/debit card (Visa or MasterCard).',
-								isOpenAnswer: false,
+								answer: 'You will be able to purchase COTI tokens using cryptocurrencies (BTC, ETH) or fiat money via bank wires or credit/debit card (Visa or MasterCard).'
 							},
 							{
 								title: 'What is the estimated supply of the COTI token?',
-								answer: 'Full details of COTI’s TGE, including token supply, will be released soon.',
-								isOpenAnswer: false,
+								answer: 'Full details of COTI’s TGE, including token supply, will be released soon.'
 							},
 							{
 								title: 'Will I receive any bonuses for my contributions in COTI’s TGE?',
-								answer: 'Full details of COTI’s TGE will be released soon.',
-								isOpenAnswer: false,
+								answer: 'Full details of COTI’s TGE will be released soon.'
 							},
 							{
 								title: 'Are there regulations on your TGE?',
-								answer: 'Full details of COTI’s TGE will be released soon. Before the TGE commences, COTI will provide details of its know-your-customer (KYC) and anti-money laundering (AML) standards, as well as details regarding restricted jurisdictions.',
-								isOpenAnswer: false,
+								answer: 'Full details of COTI’s TGE will be released soon. Before the TGE commences, COTI will provide details of its know-your-customer (KYC) and anti-money laundering (AML) standards, as well as details regarding restricted jurisdictions.'
 							},
 							{
 								title: 'What does it take to become an accredited investor?',
-								answer: 'An accredited investor is a person or entity that can deal with securities not registered with financial authorities by satisfying one of the requirements regarding income, net worth, asset size, governance status or professional experience.',
-								isOpenAnswer: false,
+								answer: 'An accredited investor is a person or entity that can deal with securities not registered with financial authorities by satisfying one of the requirements regarding income, net worth, asset size, governance status or professional experience.'
 							},
 							{
 								title: 'Are there any countries that are restricted from buying COTI?',
-								answer: 'Citizens or residents of the following countries and/or territories can’t participate in our token sale (the list may change): People’s Republic of China, Afghanistan, Bosnia and Herzegovina, Central African Republic, Cuba, Democratic Republic of Congo, Democratic People’s Republic of Korea, Eritrea, Ethiopia, Guinea-Bissau, Iran, Iraq, Israel, Libya, Lebanon, Somalia, South Sudan, Sudan, Syria, Uganda, Vanuatu, Yemen. \n Citizens and residents of United States of America can participate only if they qualify as Accredited Investors.',
-								isOpenAnswer: false,
+								answer: 'Citizens or residents of the following countries and/or territories can’t participate in our token sale (the list may change): People’s Republic of China, Afghanistan, Bosnia and Herzegovina, Central African Republic, Cuba, Democratic Republic of Congo, Democratic People’s Republic of Korea, Eritrea, Ethiopia, Guinea-Bissau, Iran, Iraq, Israel, Libya, Lebanon, Somalia, South Sudan, Sudan, Syria, Uganda, Vanuatu, Yemen. \n Citizens and residents of United States of America can participate only if they qualify as Accredited Investors.'
 							},
 
 
@@ -330,7 +323,12 @@ angular.module('app')
 		$scope.selectedQuestion = function(index1, index2) {
 			if (angular.isDefined($scope.indexQuestion) && ($scope.indexQuestion.index1 !== index1  ||
 				$scope.indexQuestion.index2 !== index2)) {
-				$scope.faqs[$scope.indexQuestion.index1].questions[$scope.indexQuestion.index2].isOpenAnswer = false;
+
+				if (!$scope.isSearch) {
+					$scope.faqs[$scope.indexQuestion.index1].questions[$scope.indexQuestion.index2].isOpenAnswer = false;
+				} else {
+					$scope.faqsFilter[$scope.indexQuestion.index1].questions[$scope.indexQuestion.index2].isOpenAnswer = false;
+				}
 			}
 
 			$scope.indexQuestion = {
@@ -339,4 +337,26 @@ angular.module('app')
 			};
 		}
 
-	});s
+		$scope.isSearch = false;
+		$scope.searchFilter = function(string) {
+			$scope.isSearch = string.length > 0 ? true : false;
+
+			if ($scope.isSearch) {
+				$scope.faqsFilter = $scope.faqs.map(function(obj) {
+					let aux = {};
+					aux.questions = obj.questions.filter(function(obj) {
+						if (obj.title.includes(string)) {
+							return obj;
+						}
+					});
+
+					if (aux !== '') {
+						return aux;
+					}
+				});
+
+				console.log($scope.faqsFilter);
+			}
+		}
+
+	});

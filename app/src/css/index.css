@@ -1127,8 +1127,8 @@ section#main #questions-wrapper {
     padding: 5px;
 }
 
-section#main #questions-wrapper h1{
-
+section#main div#questions ul li.question-wrapper {
+	margin-bottom: 35px;
 }
 
 section#main #category-selected {
