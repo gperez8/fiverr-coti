@@ -1235,3 +1235,77 @@ section#main li, p {
 #main ul{
 	padding: 0px !important; 
 }
+
+
+/***TOKEN***/
+
+.overview-copy-container#token {
+	top: 18vh !important;
+}
+
+.overview-copy-container#token > h4#acceptCreditCartTitle{
+	margin-bottom: 8%;
+}
+
+.overview-copy-container > h1#tokenH1{
+	font-size: 36px !important;
+	width: 529px;
+    height: 122px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    text-align: left;
+    color: #e2f8ff;
+    text-shadow: 0 0 10px rgba(228,236,255,.02);
+    margin-left: -3px;
+
+    margin: 3% 2% 10% -3px;
+}
+
+.overview-copy-container h3#token.txt-highlight {
+	margin-bottom: 4% !important;
+}
+
+.overview-copy-container h2#token{
+	font-weight: 900;
+	color: #e2efff;
+}
+
+div#token.overview-copy-container > div.token-header-buttons {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.token-header-buttons button {
+    width: 248px;
+    height: 36px;
+    margin-top: 1vh;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px 0 rgba(43,96,143,.3);
+    font-family: 'Titillium Web',sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #f2fcff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 15px;
+    line-height: 36px;
+    background: url(../img/download.svg) no-repeat 216px 9px,#f4f4f4;
+    transition: .4s all ease-in;
+    border: none;
+}
+
+.token-header-buttons button.overview {
+	background-color: #6fc5fd;
+}
+
+.token-header-buttons button.technical {
+	background-color: #2cabdf;
+}
+
+.token-header-buttons button.token-economy {
+	background-color: #2ca3ed;
+}

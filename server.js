@@ -21,7 +21,7 @@ const httpServer = http.createServer(app);
 httpServer.listen(app.get('port'));
 
 app.use('/', function(req, res) {
-	res.sendFile(path.join(__dirname, 'app/view/faq.html'));
+	res.sendFile(path.join(__dirname, 'app/view/token.html'));
 });
 
 app.get('/team', function(req, res) {
