@@ -65,7 +65,13 @@
 				<div class="content">
 					<aside id="categories">
 						<ul id="categories-wrapper">
-							<li class="category" ng-repeat="faq in faqs" ng-click="selectedCategory($index)">{{faq.category}} [{{faq.questions.length}}]</li>
+							<li 
+								id="category{{$index}}"
+								class="category" 
+								ng-repeat="faq in faqs"
+								ng-class="{ 'category-selected': $first}"
+								ng-click="selectedCategory($index)">{{faq.category}} [{{faq.questions.length}}]
+							</li>
 						</ul>
 					</aside>
 
@@ -81,7 +87,7 @@
 										</span>
 										{{question.title}}
 									</h3>
-									<p class="answer" ng-if="question.isOpenAnswer">{{question.answer}}</p>
+									<p  class="answer" ng-style="myStyle" ng-if="question.isOpenAnswer">{{question.answer}}</p>
 								</li>
 							</ul>
 						</div>

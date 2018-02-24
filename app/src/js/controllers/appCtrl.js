@@ -124,9 +124,7 @@ angular.module('app')
 					]
 
 				]
-			}
-
-
+			};
 
 			$scope.faqs = 
 				[ 
@@ -281,10 +279,6 @@ angular.module('app')
 					},
 
 				];
-			
-
-			console.log('$scope.faqs', $scope.faqs);
-
 		/* End Var del controlador*/
 
 
@@ -311,7 +305,24 @@ angular.module('app')
 		}
 
 		$scope.indexCategory = 0;
-		$scope.selectedCategory = function(index) {			
+		$scope.selectedCategory = function(index) {
+			
+			if ($scope.isSearch) {
+				$scope.faqsFilter = [];
+				$scope.isSearch = false;
+				$scope.searchTitle= '';
+			} 
+
+			let id = "#category"+$scope.indexCategory;	
+			let item = document.querySelector(id);
+			item.setAttribute('class','category');
+
+			
+			id = "#category"+index;	
+			item = document.querySelector(id);	
+			item.setAttribute('class','category category-selected');
+
+
 			if (angular.isDefined($scope.indexCategory)) {
 				$scope.faqs[$scope.indexCategory].categoryShow = false;
 				$scope.faqs[index].categoryShow = !$scope.faqs[index].categoryShow;
@@ -334,7 +345,7 @@ angular.module('app')
 			$scope.indexQuestion = {
 				index1: index1,
 				index2: index2
-			};
+			};			
 		}
 
 		$scope.isSearch = false;
@@ -345,7 +356,7 @@ angular.module('app')
 				$scope.faqsFilter = $scope.faqs.map(function(obj) {
 					let aux = {};
 					aux.questions = obj.questions.filter(function(obj) {
-						if (obj.title.includes(string)) {
+						if (obj.title.toLowerCase().includes(string.toLowerCase())) {
 							return obj;
 						}
 					});
@@ -354,9 +365,6 @@ angular.module('app')
 						return aux;
 					}
 				});
-
-				console.log($scope.faqsFilter);
 			}
 		}
-
 	});

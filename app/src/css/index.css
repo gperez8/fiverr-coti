@@ -549,8 +549,6 @@ footer{
     margin-top: -2vh;
 }
 
-
-
 .align-partners {
     margin-bottom: 4.3%;
     margin-top: 3%;
@@ -1070,6 +1068,8 @@ h3#title3{
 #main .content {
     max-width: 1440px;
     margin: 10vh auto;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0 5%;
     width: 90%;
     height: auto;
@@ -1087,11 +1087,7 @@ section#main aside#categories {
 	width: 20%;
 }
 
-section#main aside#categories:hover {
-   	color: #012660;
-    padding-left: 20px;
-    border-left: 3px solid #04a1c6;
-}
+
 
 section#main #categories-wrapper {
     flex-direction: row;
@@ -1151,13 +1147,14 @@ section#main .answer {
     background-color: #b1e0eb21;
     padding: 10px;
     font-family: 'Titillium Web';
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 100;
     line-height: 1.5;
     letter-spacing: .2px;
     opacity: .95;
     color: #3d3a44;
     line-height: 2;
+    transition: .5s ease-out;
 }
 
 .search-bar {
@@ -1215,7 +1212,7 @@ section#main .category {
     display: block;
 }
 
-.category-selected {
+section#main .category-selected {
     border-left: 3px solid #012658!important;
     padding-left: 20px;
     color: #012658;
