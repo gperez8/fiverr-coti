@@ -1379,6 +1379,14 @@ section#status-offering {
     background-image: linear-gradient(62deg,#194aad,#014a78);
 }
 
+section#status-offering .content>div:nth-child(odd) {
+    margin: 5vh 5% 5vh auto;
+}
+
+section#status-offering .content>div:nth-child(even) {
+    margin: 5vh auto 5vh 5%;
+}
+
 section#status-offering .status-offering-offering {
     background: url(../img/offering.svg) center center no-repeat;
     background-size: contain;
@@ -1400,7 +1408,6 @@ section#status-offering .content {
     margin: 0 auto;
     padding: 0 5%;
     width: 90%;
-    height: auto;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -1440,14 +1447,64 @@ section#status-offering .content h2 {
     margin-bottom: 3%;
 }
 
-section#status-offering .content>div:nth-child(odd) {
-    margin: 5vh 5% 5vh auto;
-}
-
 section#status-offering .content>div {
     width: 40%;
     max-width: 450px;
     text-align: left;
+}
+
+section#allocations .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10vh auto;
+}
+
+section#allocations .content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5%;
+    width: 90%;
+    height: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+}
+
+section#allocations .content h3 {
+    width: 100%;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+section#allocations .content h3.txt-highlight{
+	margin-bottom: 2.5% !important;
+}
+
+section#allocations .content ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0 20px;
+}
+
+section#allocations .content>div {
+    width: 50%;
+    max-width: 450px;
+    text-align: left;
+    margin: 5vh auto;
+}
+
+section#allocations .content>div:nth-child(even) {
+    margin: 5vh 5% 5vh auto;
+}
+
+section#allocations .content>div:nth-child(odd) {
+    margin: 5vh auto 5vh 5%;
 }
 
 section#allocations .allocations-allocations {
@@ -1456,6 +1513,65 @@ section#allocations .allocations-allocations {
     height: 250px;
     width: 100%;
     margin: 0 auto;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(1):before {
+    color: #184aaa;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(2):before {
+    color: #2cbedf;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(3):before {
+    color: #50e3c2;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(4):before {
+    color: #ffc15a;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(5):before {
+    color: #ff8337;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(6):before {
+    color: #d7297d;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(7):before {
+    color: #a05be1;
+}
+
+section#allocations .content ul.bullet-list li:nth-of-type(8):before {
+    color: #8248f3;
+}
+
+section#allocations .content ul.bullet-list li, section#allocations .content ul.percent-list li, section#allocations .content ul.word-list li {
+	line-height: 25px;
+    height: 25px;
+}
+
+section#allocations .content ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0 20px;
+    padding: 0;
+}
+
+section#allocations .content ul li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: .95;
+}
+
+section#allocations .content ul.bullet-list li:before {
+    content: "\2022";
+    font-size: 45px;
+    line-height: 25px;
+    display: inline-block;
 }
 
 section#allocations .content ul {
