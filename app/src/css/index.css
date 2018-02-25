@@ -1779,7 +1779,7 @@ section#proceeds2 .proceeds2-box .proceeds2-box-text {
     font-size: 14px;
 }
 
-section#proceeds2 .proceeds2-box p.proceeds2-box-title {
+section#proceeds2 .proceeds2-box p.proceeds2-box-text {
     font-size: 17px;
     font-weight: 100;
     line-height: 1.5 !important; 
@@ -1787,3 +1787,43 @@ section#proceeds2 .proceeds2-box p.proceeds2-box-title {
     opacity: .95;
     color: #3d3a44;
 }
+
+section#proceeds2 .proceeds2-box .proceeds2-box-title:before {
+    content: "\2022";
+    font-size: 45px;
+    padding: 0 5px 0 0;
+    vertical-align: -4px;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(1) .proceeds2-box-title:before {
+    color: #db50ef;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(2) .proceeds2-box-title:before {
+    color: #d7297d;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(3) .proceeds2-box-title:before {
+    color: #ff8337;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(4) .proceeds2-box-title:before {
+    color: #ffc15a;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(5) .proceeds2-box-title:before {
+    color: #48f0d5;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(6) .proceeds2-box-title:before {
+    color: #37bedd;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(7) .proceeds2-box-title:before {
+    color: #184aaa;
+}
+
+section#proceeds2 .proceeds2-box-container:nth-of-type(8) .proceeds2-box-title:before {
+    color: #cc9ef8;
+}
+
