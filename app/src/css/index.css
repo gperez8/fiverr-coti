@@ -656,10 +656,11 @@ footer{
 }
 
 .container > .row p {
-    font-size: 14px;
+    font-size: 16px;
     text-indent: 0vw;
     padding: 10px;
     text-align: center;
+    line-height: 1;
 }
 
 .section_nine{
@@ -1043,6 +1044,7 @@ h3#title3{
 
 #description{
 	text-align: left;
+    line-height: 1.5;
 }
 
 .container > h3#title2.txt-highlight{

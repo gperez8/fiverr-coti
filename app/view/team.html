@@ -60,11 +60,10 @@
 			</section>
 
 			<section class="container">
-
 				<h3 id="title2" class="txt-highlight">Core Team</h3>
 
 				<div class="row" ng-repeat="team in response.teams">
-					<div class="col-md-4 col-xl-4" ng-repeat="people in team">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-xl-4" ng-repeat="people in team">
 						<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
 						<p class="team-people-name">{{people.fullName}}</p>
 						<p class="team-people-title">{{people.employment}}</p>
@@ -76,7 +75,7 @@
 					<h3 id="title3" class="txt-highlight">BACKERS AND ADVISORS</h3>
 
 					<div  class="row" ng-repeat="team in response.teams">
-						<div class="col-md-4 col-xl-4" ng-repeat="people in team">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-xl-4" ng-repeat="people in team">
 							<img class="mx-auto d-block rounded-circle" src="src/img/prueba/1.jpg" width="140" height="140">
 							<p class="team-people-name">{{people.fullName}}</p>
 							<p class="team-people-title">{{people.employment}}</p>
